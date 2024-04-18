@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-const articles = [
+const posts = [
     {
         title: "5G Technology: Revolutionizing Connectivity",
         body: `5G technology stands at the forefront of a connectivity revolution poised to reshape industries and societies worldwide. With its promise of ultra-fast data transmission, low latency, and massive device connectivity, 5G heralds an era of unprecedented connectivity. Businesses are already exploring the potential of 5G to transform operations, from enabling autonomous vehicles and smart cities to revolutionizing healthcare through remote surgeries and real-time patient monitoring. Additionally, consumers can anticipate seamless streaming experiences, enhanced virtual reality applications, and the widespread adoption of Internet of Things (IoT) devices, fundamentally changing how we interact with technology in our daily lives. However, the rollout of 5G also brings challenges such as infrastructure upgrades, security concerns, and ensuring equitable access, highlighting the need for collaboration between governments, industries, and communities to fully harness its transformative potential.
@@ -34,12 +34,12 @@ const articles = [
 ]
 
 async function writeToDb(){
-    articles.map(async (article) => {
+    posts.map(async (post) => {
         await prisma.post.create({
             data: {
-                title: article.title,
-                body: article.body,
-                published: article.published
+                title: post.title,
+                body: post.body,
+                published: post.published
             }
         })
     })
