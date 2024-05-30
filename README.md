@@ -78,6 +78,7 @@ Having met all the prerequisites, you follow the steps below to run the project 
    # Express server
    yarn dev
 
-   # React Native server
+   # React Native server - In separate terminals
    yarn start
+   yarn android
    ```
