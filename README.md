@@ -30,3 +30,54 @@ Here are the screenshots of all these screens in the order they are listed above
     <td><img src="https://i.imgur.com/k8yoxTb.png" alt="Details Screen" height="500"></td>
   </tr>
 </table>
+
+## Getting Started
+
+### Prerequisites
+
+To run this project locally, you will need to have the following:
+
+- A **React Native development environment** [set up](https://reactnative.dev/docs/environment-setup?guide=native).
+- **[Node.js v18](https://nodejs.org/en/download)** and **[Yarn](https://classic.yarnpkg.com/en/docs/install)** installed on your local machine.
+- An **[emulator](https://developer.android.com/studio/run/emulator)** with Google Play Store support (indicated by the Google Play icon when creating a new emulator device). This guide uses Pixel 4:
+
+    ![Selecting hardware](https://i.imgur.com/UUoNZ30.png)
+    > **Note:** Make sure that you set up a screen lock for your emulator. For this guide, the emulator has a PIN set up.
+
+- A free **[GitHub account](https://github.com/)**.
+- The [**Git CLI** installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your local machine.
+- A free [**Descope** account](https://www.descope.com/sign-up) and a basic understanding of [how to customize Descope flows](https://docs.descope.com/customize/flows/).
+- A [**Gmail** account](https://mail.google.com). Make sure you are signed into the Gmail account on the emulator.
+
+### Running the Project Locally
+
+Having met all the prerequisites, you follow the steps below to run the project locally.
+
+1. Clone the repo:
+   
+   ```bash
+   git clone https://github.com/kimanikevin254/descope-react-native-auth.git --single-branch -b main
+   ```
+
+2. Install the dependencies:
+
+    ```bash
+    cd descope-react-native-auth
+    
+    # Server dependencies
+    cd server
+    yarn
+
+    # React Native dependencies
+    cd DescopeReactNativeAuth
+    yarn
+    ```
+4. Run the servers:
+
+   ```bash
+   # Express server
+   yarn dev
+
+   # React Native server
+   yarn start
+   ```
